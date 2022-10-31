@@ -62,3 +62,8 @@ iframe {
   line-height: 50px;
   transition: .3s;
 }
+@media(max-width: 767px) {
+  .container {
+    width: 98%;
+  }
+}
