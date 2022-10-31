@@ -3,10 +3,9 @@ let iFrame = document.querySelector(".container iframe");
 let name = document.querySelector(".container .name");
 
 
-iFrame.onload = function() {
-  console.log("Loaded");
+// iFrame.onload = function() {
   
-}
+// }
 
 
 fetch("https://quran-endpoint.vercel.app/quran")
