@@ -77,7 +77,7 @@ iframe {
 @media(max-width: 767px) {
 
   .container {
-    width:98px;
+    width:98%;
     margin: 0 1%;
   }
 
