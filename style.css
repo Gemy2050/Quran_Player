@@ -11,10 +11,22 @@ iframe {
   width: calc(70%);
   margin: auto;
 }
+.container .start {
+  width: 100%;
+  height: 40px;
+  background-color: #0075dd;
+  color: white;
+  border-radius: 6px;
+  font-size: 30px;
+  margin: 10px 0 30px;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
 .container .media {
   display: flex;
   flex-direction: column;
   align-items: center;
+  display: none;
 }
 .container .name {
   text-align: center;
@@ -63,7 +75,10 @@ iframe {
   transition: .3s;
 }
 @media(max-width: 767px) {
+
   .container {
-    width: 98%;
+    width:98px;
+    margin: 0 1%;
   }
+
 }

@@ -1,11 +1,15 @@
 let parent = document.querySelector(".container .parent");
 let iFrame = document.querySelector(".container iframe");
 let name = document.querySelector(".container .name");
+let media = document.querySelector(".container .media");
+let startBtn = document.querySelector("button.start");
 
 
-// iFrame.onload = function() {
-  
-// }
+startBtn.onclick = function() {
+  this.style.display = "none";
+  iFrame.src = "http://download.quranicaudio.com/quran/ahmed_ibn_3ali_al-3ajamy/001.mp3"
+  media.style.display = 'flex';
+}
 
 
 fetch("https://quran-endpoint.vercel.app/quran")
@@ -27,6 +31,7 @@ function handleClick(url) {
 
   boxs.forEach((box)=> {
     box.addEventListener(('click'), (e)=> {
+      startBtn.click();
       iFrame.src = `https://download.quranicaudio.com/quran/ahmed_ibn_3ali_al-3ajamy/${e.target.dataset.num}.mp3`;
       name.textContent = e.target.textContent;
       window.scrollTo({
@@ -45,4 +50,4 @@ String.prototype.zFill = function (width) {
         result = `0${result}`
     }
     return result.toString();
-}
+  }
